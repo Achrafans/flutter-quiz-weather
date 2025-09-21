@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Quiz App',
       theme: ThemeData(primarySwatch: Colors.deepOrange),
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
               Tab(icon: Icon(Icons.quiz), text: "Quiz"),
               Tab(icon: Icon(Icons.cloud), text: "Weather")
             ]),
-            title: Text('II-BDCC'),
+            title: Text('MASTER II-BDCC'),
           ),
           body: TabBarView(
             children: [Quiz(), Weather()],

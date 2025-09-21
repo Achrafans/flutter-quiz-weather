@@ -110,7 +110,7 @@ class _MeteoPageState extends State<Weather> {
                 final desc = item["weather"][0]["description"];
 
                 return Card(
-                  color: Colors.deepOrangeAccent,
+                  color: Colors.blue,
                   child: ListTile(
                     leading: BoxedIcon(
                       _getWeatherIcon(icon),

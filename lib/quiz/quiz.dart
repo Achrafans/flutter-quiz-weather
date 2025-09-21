@@ -21,29 +21,48 @@ class QuizState extends State<Quiz> {
 
   final quiz = [
     {
-      'question': 'Q 1 - Which of the following is correct about Java 8 lambda expression ?',
-      'answers': [
+      "question": "Q 1 - In Java 8, which method is used to combine multiple `Predicate` instances?",
+      "answers": [
         {
-          'answer': 'A - Using lambda expression, you can refer to final variable or effectively final variable (which is assigned only once)',
-          'correct': false
+          "answer": "A - and()",
+          "correct": true
         },
         {
-          'answer': 'B - Lambda expression throws a compilation error, if a variable is assigned a value the second time ?',
-          'correct': false
+          "answer": "B - or()",
+          "correct": false
         },
-        {'answer': 'C - Both of the above.', 'correct': true},
-        {'answer': 'D - None of the above.', 'correct': false},
-      ],
+        {
+          "answer": "C - not()",
+          "correct": false
+        },
+        {
+          "answer": "D - combine()",
+          "correct": false
+        }
+      ]
     },
     {
-      'question': 'Q 8 - Which of the following is the correct lambda expression which add two numbers and return their sum?',
-      'answers': [
-        {'answer': 'A - (int a, int b) -> { return a + b;};', 'correct': false},
-        {'answer': 'B - (a, b) -> {return a + b;};', 'correct': false},
-        {'answer': 'C - Both of the above.', 'correct': true},
-        {'answer': 'D - None of the above.', 'correct': false},
-      ],
+      "question": "Q 2 - Which of the following functional interfaces is used to represent a function that accepts two arguments and produces a result in Java 8?",
+      "answers": [
+        {
+          "answer": "A - Function<T, R>",
+          "correct": false
+        },
+        {
+          "answer": "B - BiFunction<T, U, R>",
+          "correct": true
+        },
+        {
+          "answer": "C - Consumer<T>",
+          "correct": false
+        },
+        {
+          "answer": "D - Supplier<T>",
+          "correct": false
+        }
+      ]
     }
+
   ];
 
   void answerQuestion(bool correct) {
